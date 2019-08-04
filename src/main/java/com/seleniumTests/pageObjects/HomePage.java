@@ -48,16 +48,16 @@ public class HomePage {
         this.password.sendKeys(password);
     }
 
-    public String submit(){
+    public Boolean submit(){
 
         submit.click();
-        return pageTitle.getText();
+        return pageTitle.getText().equals("Users");
 
     }
 
-    public String invalidSubmit(){
+    public boolean invalidSubmit(){
         submit.click();
-        return nottext.getText();
+        return nottext.getText().equals("Invalid login and/or password.");
     }
 
     public boolean logOut(){

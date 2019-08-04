@@ -6,9 +6,10 @@
             <class name="com.seleniumTests.SeleniumTests">
                 <methods>
                     <include name="testLogIn" />
-                    <include name="testWrongLogIN"/>
-
+                    <include name="testCreateUser"/>
+                    <include name="testDeleteUser"/>
                     <include name="testLogOut"/>
+                    <include name="testWrongLogIN"/>
                 </methods>
             </class>
         </classes>
